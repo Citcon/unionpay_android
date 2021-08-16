@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.citcon.unionpay">
+
+    <application>
+        <!-- unionpay -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:name="com.unionpay.uppay.PayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UPPay"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.unionpay.UPPayWapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UPPay"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>
