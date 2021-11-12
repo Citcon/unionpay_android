@@ -67,3 +67,11 @@ afterEvaluate {
         }
     }
 }
+
+ext {
+    PUBLISH_GROUP_ID = 'com.citcon.sdk'
+    PUBLISH_VERSION = '3.3.0'
+    PUBLISH_ARTIFACT_ID = 'unionpay'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
